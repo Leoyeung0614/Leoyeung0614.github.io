@@ -1,0 +1,22 @@
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    
+    #hamburger-nav {
+        display: flex;
+    }
+
+    #desktop-progress {
+        display: none;
+    }
+
+    #mobile-progress {
+        display: flex;
+    }
+
+    .profile-content {
+        left: 25%;
+        top: 30%;
+    }
+}

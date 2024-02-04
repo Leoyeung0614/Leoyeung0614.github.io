@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Leo Yeung</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaqueries-profile.css">
+        <link href="https://fonts.googleapis.com/css2?family=Days+One&family=VT323&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <script src="rain.js"></script>
+        <div class="city"></div>
+
+        
+
+        <nav id="desktop-nav">
+            <div class="logo">Leo</div>
+            <div>
+                <ul class="links">
+                    <li><a href="index.html" class="link">Home</a></li>
+                    <li><a href="profile.html" class="link selected">Profile</a></li>
+                    <li><a href="project.html" class="link">Project</a></li>
+                </ul>
+            </div>
+        </nav>
+    
+        <nav id="hamburger-nav">
+            <div class="logo">Leo</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="hamburger-links">
+                    <li><a href="index.html" onclick="toggleMenu()" class="link">Home</a></li>
+                    <li><a href="profile.html" onclick="toggleMenu()" class="link selected">Profile</a></li>
+                    <li><a href="project.html" onclick="toggleMenu()" class="link">Project</a></li>
+                </div>
+            </div>
+        </nav>
+        <script src="toggleMenu.js"></script>
+
+        <!-- <img src="/image/bird1.png" alt="icon" class="icon"> -->
+        <div id="desktop-progress">
+            <img src="/image/bird.gif" alt="bird" class="profile-bird">
+            <div class="progress-links">
+                <p class="About"><a href="#About" class="link progress-link About">About me</a></p>
+                <p class="Skill"><a href="#Skill" class="link progress-link Skill">Skill</a></p>
+                <p class="Experience"><a href="#Experience" class="link progress-link Experience">Experience</a></p>
+                <p class="Award"><a href="#Award" class="link progress-link Award">Award</a></p>
+            </div>
+        </div>
+
+        <div id="mobile-progress">
+            <img src="/image/bird.gif" alt="bird" class="profile-bird">
+            <div class="progress-links">
+                <p><a href="#About" class="link progress-link">About me</a></p>
+                <p><a href="#Skill" class="link progress-link">Skill</a></p>
+                <p><a href="#Experience" class="link progress-link">Experience</a></p>
+                <p><a href="#Award" class="link progress-link">Award</a></p>
+            </div>
+        </div>
+
+        <div class="profile-content">
+            <section id="About">
+                <div class="content-box profile-about">
+                    <h1>About me</h1>
+                    <p>Hi I'm YEUNG Ting Kit, you can call me Leo</p>
+                    <p>I am currently studying BSc (Hons) Computing at The Hong Kong Polytechnic university</p>
+                </div>
+            </section>
+
+            <section id="Skill">
+                <div class="content-box profile-skill">
+                    <h1>Skill</h1>
+                </div>
+            </section>
+
+            <section id="Experience">
+                <div class="content-box profile-experience">
+                    <h1>Experience</h1>
+                </div>
+            </section>
+
+            <section id="Award">
+                <div class="content-box profile-award">
+                    <h1>Award</h1>
+                </div>
+            </section>
+        </div>
+        <script src="scrollDetector.js"></script>
+    </body>
+</html>

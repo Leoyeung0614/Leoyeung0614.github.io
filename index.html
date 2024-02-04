@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Leo Yeung</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaqueries-index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Days+One&family=VT323&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <script src="rain.js"></script>
+        <div class="city"></div>
+
+        <nav id="desktop-nav">
+            <div class="logo">Leo</div>
+            <div>
+                <ul class="links">
+                    <li><a href="index.html" class="link selected">Home</a></li>
+                    <li><a href="profile.html" class="link">Profile</a></li>
+                    <li><a href="project.html" class="link">Project</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav id="hamburger-nav">
+            <div class="logo">Leo</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="hamburger-links">
+                    <li><a href="index.html" onclick="toggleMenu()" class="link selected">Home</a></li>
+                    <li><a href="profile.html" onclick="toggleMenu()" class="link">Profile</a></li>
+                    <li><a href="project.html" onclick="toggleMenu()" class="link">Project</a></li>
+                </div>
+            </div>
+        </nav>
+        <script src="toggleMenu.js"></script>
+
+
+        <div class="home">
+            <img src="/image/bird.gif" alt="bird" class="index-bird">
+            <p>Greetings, I'm</p>
+            <h1 class="name" data-text="&lt Leo Yeung &gt">&lt Leo Yeung &gt</h1>
+            <h2 id="index-h2">a coding enjoyer</h2>
+            <p id="index-p1">Feels alone? that bird will always be with you.</p>
+        </div>
+    </body>
+</html>
