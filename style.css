@@ -286,20 +286,84 @@ nav, .links {
     line-height: 2;
 }
 
+.icon {
+    width: 12vw;
+    border: 3px solid rgba(255,255,255,0.2);
+    border-radius: 100%;
+    margin: auto;
+    max-width: 200px;
+}
+
+#desktop-progress .media-menu {
+    display: flex;
+    position: fixed;
+    margin: 500px 0 0 0px;
+}
+
+.media-menu a {
+    width: 3vw;
+    height: 3vw;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 100%;
+    margin: 0 1vw;
+
+}
+
+.media-menu .button {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.2);
+
+    color: white;
+    font-size: 2vw;
+    line-height: 3vw;
+
+}
+
 /* mobile-progress setting*/
 #mobile-progress {
     width: 50%;
     left: 25%;
     top: 15%;
-    border: 1px solid red;
 
     display: none;
     position: absolute;
-    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.2);
+
+    max-height: 139px;
 }
 
 #mobile-progress .profile-bird {
-    margin: -100px 0 0 -300px;
+    margin: -102px 0 0 40px;
+}
+
+#mobile-progress .icon {
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 100px;
+}
+
+#mobile-progress .progress-links {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 0px;
+    padding-bottom: 0px;
+}
+
+#mobile-progress .media-menu {
+    display: flex;
+    flex-direction: column;
+
+    margin: auto;
+}
+
+#mobile-progress .media-menu a {
+    margin: 0.5vh 0;
 }
 
 /* profile-content setting */
