@@ -30,7 +30,7 @@ body {
 }
 
 i {
-    background: linear-gradient(transparent, #494848);
+    background: linear-gradient(transparent, #909090);
     position: fixed;
     height: 5vh;
     border-bottom-left-radius: 5px;
@@ -251,9 +251,9 @@ nav, .links {
 /* desktop-progress setting*/
 #desktop-progress {
     margin-left: 10%;
-    margin-top: 15%;
-    width: 15vw;
-    height: 40vh;
+    margin-top: 10%;
+    width: 200px;
+    height: 300px;
 
     display: flex;
     flex-direction: column;
@@ -265,14 +265,16 @@ nav, .links {
     box-shadow: 0 25px 45px rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     border: 2px solid rgba(255,255,255,0.2);
+
+    min-width: 200px;
+    min-height: 300px;
 }
 
 .profile-bird {
     width: 128px;
     height: 128px;
-    position: absolute;
-    margin: -465px 0 0 0px;
-
+    position: fixed;
+    margin: -375px 0px 0px 0px;
     filter: drop-shadow(1px 1px 20px white);
 }
 
@@ -291,13 +293,13 @@ nav, .links {
     border: 3px solid rgba(255,255,255,0.2);
     border-radius: 100%;
     margin: auto;
-    max-width: 200px;
+    max-width: 150px;
 }
 
 #desktop-progress .media-menu {
     display: flex;
     position: fixed;
-    margin: 500px 0 0 0px;
+    margin-top: 200%;
 }
 
 .media-menu a {
@@ -315,20 +317,22 @@ nav, .links {
     backdrop-filter: blur(5px);
     border: 1px solid rgba(255,255,255,0.2);
 
-    color: white;
+    color: #909090;
     font-size: 2vw;
     line-height: 3vw;
 
 }
 
+.button:hover {
+    color: white;
+    box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.7);
+}
+
 /* mobile-progress setting*/
 #mobile-progress {
-    width: 50%;
-    left: 25%;
-    top: 15%;
+    width: 100%;
 
     display: none;
-    position: absolute;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
     box-shadow: 0 25px 45px rgba(255, 255, 255, 0.1);
@@ -336,6 +340,7 @@ nav, .links {
     border: 2px solid rgba(255,255,255,0.2);
 
     max-height: 139px;
+    margin-bottom: 5%;
 }
 
 #mobile-progress .profile-bird {
@@ -387,8 +392,18 @@ nav, .links {
     box-shadow: 0 25px 45px rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     border: 2px solid rgba(255,255,255,0.2);
+
+    color: #B4B4B4;
 }
 
 .profile-about, .profile-skill, .profile-experience, .profile-award {
     height: 80%;
+}
+
+.profile-about h1 {
+    padding: 10px;
+}
+
+.profile-about p {
+    padding: 5px 10px;
 }
