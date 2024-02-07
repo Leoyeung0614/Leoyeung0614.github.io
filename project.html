@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Leo Yeung | Project</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaqueries-index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&family=VT323&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <script src="rain.js"></script>
+        <div class="city"></div>
+
+        <nav id="desktop-nav">
+            <div class="logo">Leo Yeung</div>
+            <div>
+                <ul class="links">
+                    <li><a href="index.html" class="link">Home</a></li>
+                    <li><a href="profile.html" class="link">Profile</a></li>
+                    <li><a href="project.html" class="link selected">Project</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav id="hamburger-nav">
+            <div class="logo">Leo</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="hamburger-links">
+                    <li><a href="index.html" onclick="toggleMenu()" class="link">Home</a></li>
+                    <li><a href="profile.html" onclick="toggleMenu()" class="link">Profile</a></li>
+                    <li><a href="project.html" onclick="toggleMenu()" class="link selected">Project</a></li>
+                </div>
+            </div>
+        </nav>
+        <script src="toggleMenu.js"></script>
+
+    </body>
+</html>
