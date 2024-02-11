@@ -2,10 +2,11 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Leo Yeung | Home</title>
+        <title>Leo Yeung | Contact</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="mediaqueries-index.css">
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&family=VT323&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/092cc676c6.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -16,10 +17,10 @@
             <div class="logo">Leo Yeung</div>
             <div>
                 <ul class="links">
-                    <li><a href="index.html" class="link selected">Home</a></li>
+                    <li><a href="index.html" class="link">Home</a></li>
                     <li><a href="profile.html" class="link">Profile</a></li>
                     <li><a href="project.html" class="link">Project</a></li>
-                    <li><a href="contact.html" class="link">Contact</a></li>
+                    <li><a href="contact.html" class="link selected">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -33,23 +34,28 @@
                     <span></span>
                 </div>
                 <div class="hamburger-links">
-                    <li><a href="index.html" onclick="toggleMenu()" class="link selected">Home</a></li>
+                    <li><a href="index.html" onclick="toggleMenu()" class="link">Home</a></li>
                     <li><a href="profile.html" onclick="toggleMenu()" class="link">Profile</a></li>
                     <li><a href="project.html" onclick="toggleMenu()" class="link">Project</a></li>
-                    <li><a href="contact.html" onclick="toggleMenu()" class="link">Contact</a></li>
+                    <li><a href="contact.html" onclick="toggleMenu()" class="link selected">Contact</a></li>
                 </div>
             </div>
         </nav>
         <script src="toggleMenu.js"></script>
 
 
-        <div class="home">
-            <img src="/image/bird.gif" alt="bird" class="index-bird">
-            <p>Greetings, I'm</p>
-            <h1 class="name" data-text="&lt Leo Yeung &gt">&lt Leo Yeung &gt</h1>
-            <h2 id="index-h2">a coding enjoyer</h2>
-            <p id="index-p1">Creativity is unleashed only when intelligence escapes from the will.</p>
-            <a href="" download title="Resume.pdf">&#10148; Download Resume</a>
+        <div class="contact-content">
+            <img src="/image/bird.gif" alt="bird" class="contact-bird">
+            <h1>Find me in...</h1>
+            <div class="dash"></div>
+            <div class="contact-container">
+                <j class="fa-brands fa-whatsapp"></j>
+                <p><a href="https://wa.me/85261269430" title="Send me whatsapp">+852 6126 9430</a></p>
+            </div>
+            <div class="contact-container">
+                <j class="fa-regular fa-envelope"></j>
+                <p><a href="mailto:leoyeung0614@gmail.com" title="Send me email">leoyeung0614@gmail.com</a</p>
+            </div>
         </div>
     </body>
 </html>

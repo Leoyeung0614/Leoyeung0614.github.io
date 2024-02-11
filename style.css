@@ -263,11 +263,11 @@ nav, .links {
 /* Profile */
 
 /* desktop-progress setting*/
-#desktop-progress {
+.desktop-progress {
     margin-left: 10%;
     margin-top: 10%;
-    width: 200px;
-    height: 300px;
+    width: auto;
+    height: auto;
 
     display: flex;
     flex-direction: column;
@@ -293,7 +293,6 @@ nav, .links {
 }
 
 .progress-links {
-    margin-top: auto;
     padding-left: 10px;
     padding-bottom: 10px;
 }
@@ -310,7 +309,7 @@ nav, .links {
     max-width: 130px;
 }
 
-#desktop-progress .media-menu {
+.desktop-progress .media-menu {
     display: flex;
     position: fixed;
     flex-wrap: wrap;
@@ -344,7 +343,7 @@ nav, .links {
 }
 
 /* mobile-progress setting*/
-#mobile-progress {
+.mobile-progress {
     width: 100%;
 
     display: none;
@@ -358,39 +357,40 @@ nav, .links {
     margin-bottom: 5%;
 }
 
-#mobile-progress .profile-bird {
+.mobile-progress .profile-bird {
     margin: -102px 0 0 10px;
 }
 
-#mobile-progress .icon {
+.mobile-progress .icon {
     margin-left: 5%;
     margin-right: 5%;
     max-width: 100px;
 }
 
-#mobile-progress .progress-links {
+.mobile-progress .progress-links {
     margin-left: 5%;
     margin-right: 5%;
-    padding: 0 0;
+    padding: 10px 0;
 }
 
-#mobile-progress .media-menu {
+.mobile-progress .media-menu {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin: auto;
 }
 
-#mobile-progress .media-menu a {
+.mobile-progress .media-menu a {
     width: 30px;
     height: 30px;
 
     margin: 5px 0;
 }
 
-#mobile-progress .button {
+.mobile-progress .button {
     font-size: 20px;
     line-height: 35px;
+    background-color: rgba(255, 255, 255, 0.0);
 }
 
 /* profile-content setting */
@@ -445,7 +445,7 @@ nav, .links {
     margin: 0 30px;
 }
 
-.profile-content a {
+.profile-content .content-box a {
     font-size: large;
     font-weight: bold;
     text-decoration: none;
@@ -456,6 +456,11 @@ nav, .links {
 .profile-content a:hover {
     text-shadow: 1px 1px 20px rgba(255, 255, 255, 0.7);
     color: white;
+}
+
+.profile-content h1,
+.profile-content h3 {
+    color: #d4d4d4;
 }
 
 .profile-skill h1 {
@@ -482,8 +487,9 @@ nav, .links {
 
 .dash {
     border: 1px solid #909090;
-    width: 200px;
+    width: 20vw;
     height: 0px;
+    max-width: 200px;
 }
 
 .skill-content h3 {
@@ -544,4 +550,215 @@ nav, .links {
 
 .exp-content h3 {
     color: #B4B4B4;
+}
+
+.project-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    min-height: 250%;
+}
+/* .profile-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    min-height: 200%;
+} */
+.timeline {
+    border-left: 2px solid #909090;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.project-content-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.2);
+    padding: 20px;
+    position: relative;
+    margin-bottom: 50px;
+    
+    color: #909090;
+}
+
+.project-content-box::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    border: 3px solid #909090;
+    position: absolute;
+    left: -61px;
+}
+
+.project-content-box::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 18px;
+    left: -11px;
+    transform: rotate(-45deg);
+
+    border-left: 2px solid rgba(255,255,255,0.2);
+    border-right: 2px solid transparent;
+    border-top: 2px solid rgba(255,255,255,0.2);
+    border-bottom: 2px solid transparent;
+}
+
+.project-desktop-progress {
+    min-width: 200px;
+    min-height: 150px;
+}
+
+.project-bird {
+    width: 128px;
+    height: 128px;
+    position: fixed;
+    margin: -227px 0px 0px 0px;
+    filter: drop-shadow(1px 1px 20px white);
+}
+
+.project-mobile-progress {
+    margin-bottom: 50px;
+}
+
+.mobile-progress .project-bird {
+    margin: -102px 0px 0px -0px;
+}
+
+.project-desktop-progress .progress-links,
+.project-mobile-progress .progress-links {
+    padding: 10px 10px;
+}
+
+.project-content-box h1 {
+    color: #d4d4d4;
+    padding-bottom: 10px;
+}
+
+.project-content-box h3 {
+    color: #d4d4d4;
+    padding-left: 30px;
+    padding-bottom: 1px;
+}
+
+.project-content-box .dash {
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.project-content-box p {
+    padding-left: 30px;
+    padding-bottom: 50px;
+}
+
+.project-content-box span {
+    font-size: large;
+    font-weight: bold;
+    color: #B4B4B4;
+}
+
+#healthybeacon-icon {
+    padding: 0px 10px;
+    width: 5vw;
+    border-radius: 30%;
+}
+
+.project-content-box a {
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid #B4B4B4;
+    color: #B4B4B4;
+}
+
+.project-content-box a:hover {
+    text-shadow: 1px 1px 20px rgba(255, 255, 255, 0.7);
+    color: white;
+}
+
+#eureka-homepage {
+    padding: 0px 10px;
+    width: 15vw;
+}
+
+.contact-content {
+    width: 50%;
+    position: absolute;
+    top: 35%;
+    left: 25%;
+
+    color: #B4B4B4;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-content .dash {
+    margin: 15px 0px;
+    min-width: 450px;
+    border-color: #B4B4B4;
+}
+
+.contact-content .contact-container {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px;
+    padding-left: 30px;
+}
+
+.contact-content .fa-regular,
+.contact-content .fa-brands {
+    text-align: center;
+    line-height: 45px;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 100%;
+
+    color: #909090;
+    font-size: 30px;
+    min-width: 45px;
+    min-height: 45px;
+}
+
+.contact-container p {
+    font-size: 20px;
+    line-height: 45px;
+    padding-left: 20px;
+}
+
+.contact-container a {
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid #909090;
+    color: #909090;
+}
+
+.contact-container a:hover {
+    text-shadow: 1px 1px 20px rgba(255, 255, 255, 0.7);
+    color: white;
+}
+
+.contact-bird {
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    transform: scaleX(-1);
+    filter: drop-shadow(1px 1px 20px white);
+    margin: -47px 0px 0px 250px;
 }

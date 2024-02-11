@@ -13,9 +13,14 @@
 
     .mobile-progress {
         display: flex;
+        /* position: absolute;
+        top: 15%;
+        left: 25%;
+        width: 50%;
+        justify-content: space-around; */
     }
 
-    .profile-content {
+    .project-content {
         left: 25%;
         top: 30%;
     }
