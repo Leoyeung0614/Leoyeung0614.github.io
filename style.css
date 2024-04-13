@@ -762,3 +762,14 @@ nav, .links {
     filter: drop-shadow(1px 1px 20px white);
     margin: -47px 0px 0px 250px;
 }
+
+.badge-container {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}
+
+.badge {
+    width: 140px;
+    height: 40px;
+}
